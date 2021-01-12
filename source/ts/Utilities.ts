@@ -66,4 +66,20 @@ export class Utilities
         Utilities.Hide(elementToHide);
         Utilities.Show(elementToShow);
     }
+
+    public static ShowElementOfGroupByID(id: string, elements: Array<Element>,
+        showFunction: (element: Element) => void = Utilities.ShowRemoveHidden,
+        hideFunction: (element: Element) => void = Utilities.HideAddHidden)
+    {
+        for (const element of elements) {
+            if(element.id == id)
+            {
+                showFunction(element);
+            }
+            else
+            {
+                hideFunction(element);
+            }
+        }
+    }
 }
