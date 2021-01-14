@@ -8,11 +8,24 @@ export class ElementGroupShowSingleByID
     {
     }
 
+    /**
+     * Shows a single element out of a list of elements.
+     */
     public Show(elementID: string)
     {
         Utilities.ShowElementOfGroupByID(elementID,
             this.Elements,
             this.ShowFunction,
             this.HideFunction);
+    }
+
+    /**
+     * Hides all element.s
+     */
+    public HideAll()
+    {
+        for (const element of this.Elements) {
+            this.HideFunction(element);
+        }
     }
 }
