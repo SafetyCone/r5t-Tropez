@@ -1,4 +1,5 @@
 export * from "./StyleClassNames"
+export * from "./HtmlElements/HideableElement";
 export * from "./UIComponents/ElementGroupShowSingleByID";
 export * from "./UIComponents/MobileMenu/MobileMenu";
 export { HtmlModel as MobileMenuHtmlModel } from "./UIComponents/MobileMenu/HtmlModel";
