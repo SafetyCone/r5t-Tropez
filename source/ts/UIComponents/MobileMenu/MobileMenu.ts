@@ -65,7 +65,5 @@ export class MobileMenu
     private ToggleMobileMenu()
     {
         this.Open = !this.Open;
-
-        this.SetMobileMenu();
     }
 }
