@@ -1,4 +1,4 @@
-import { QuerySelectorHelper } from "r5t-Avignon/Helpers/QuerySelectorHelper";
+import { QuerySelectorHelper } from "r5t-Avignon";
 
 
 export class HtmlModel
