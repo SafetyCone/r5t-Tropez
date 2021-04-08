@@ -1,7 +1,20 @@
+import { HtmlAttributeHelper } from "r5t-Avignon";
+import { StyleAttributeNames } from "./StyleAttributeNames";
+
 import { StyleClassNames } from "./StyleClassNames";
 
 export class Utilities
 {
+    public static AddHiddenAttribute(element: Element)
+    {
+        HtmlAttributeHelper.SetValuelessAttribute(element, StyleAttributeNames.hidden);
+    }
+
+    public static RemoveHiddenAttribute(element: Element)
+    {
+        HtmlAttributeHelper.RemoveAttribute(element, StyleAttributeNames.hidden);
+    }
+
     /**
      * Shows an element by removing the hidden class.
      */
