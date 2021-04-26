@@ -7,4 +7,5 @@ export * from "./UIComponents/UserProfileDropdown/UserProfileDropdown";
 export { HtmlModel as UserProfileDropdownHtmlModel } from "./UIComponents/UserProfileDropdown/HtmlModel";
 export * from "./StyleAttributeNames"
 export * from "./StyleClassNames"
+export * from "./StyleTransitionTimings"
 export * from "./Utilities";
